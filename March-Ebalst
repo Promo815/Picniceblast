@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Standard Business Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="margin: 0; padding: 0; box-sizing: border-box; font-family: 'poppins', sans-serif; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.308);" onload="changeContent(1)">
+    <div class="header" style="width: 1000px; max-height: 175px; background: rgb(233, 29, 45); border-radius: 12px; margin: 0 auto; padding: 40px 0; text-align: center;">
+        <img src="http://127.0.0.1:5500/Sage/img/CPS_Horizontal_Logo_4-C_1.PNG.png" width="483" height="100" alt="">
+    </div>
+
+    <div class="container-wrapper" style="max-width: 1000px; margin-top: 20px;">
+        <div class="container" style="max-width: 1000px; background: #fff; border-radius: 12px; margin: 0 auto; padding: 40px 50px 40px 40px; display: flex; flex-direction: column; align-items: center; transition: transform 0.5s;">
+            <div class="buttons-container" style="display: flex; justify-content: center; width: 100%; margin-bottom: 50px;">
+                <button onclick="changeContent(1)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 1</button>
+                <button onclick="changeContent(2)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 2</button>
+                <button onclick="changeContent(3)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 3</button>
+                <button onclick="changeContent(4)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 4</button>
+                <button onclick="changeContent(5)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 5</button>
+                <button onclick="changeContent(6)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 6</button>
+                <button onclick="changeContent(7)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 7</button>
+                <button onclick="changeContent(8)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 8</button>
+                <button onclick="changeContent(9)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 9</button>
+                <button onclick="changeContent(10)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 10</button>
+                <button onclick="changeContent(11)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 11</button>
+                <button onclick="changeContent(12)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 12</button>
+                <button onclick="changeContent(13)" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; margin-right: 10px;">Item 13</button>
+                <!-- Repeat the buttons for other items -->
+            </div>
+            <div class="image-container" style="width: 1000px; padding: 20px;">
+                <img id="image" src="image1.jpg" alt="Image" style="max-width: 1050px; height: auto; display: block; margin: 0 auto;">
+            </div>
+            <div class="description-container" style="width: 1000px; padding: 20px;">
+                <p id="description" style="padding-left: 30px; text-align: justify;">Description 1</p>
+                <div class="learn-more" style="text-align: center; margin-top: 30px;">
+                    <a href="#" id="link" target="_blank" style="padding: 10px 10px; font-size: 16px; cursor: pointer; border: none; background-color: rgb(233, 29, 45); color: #fff; border-radius: 5px; text-decoration: none;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" style="width: 1000px; max-height: 175px; background: rgb(233, 29, 45); border-radius: 12px; margin: 20px auto; padding: 20px 0; text-align: center;">
+        <a href="https://www.promoplace.com/commercialprintingservices" class="footer-link" style="color: #fff; text-decoration: none; font-size: 18px; font-weight: bold;">Visit Our Promotional Products WebSite</a>
+    </footer>
+
+    <script>
+        function changeContent(num) {
+            var image = document.getElementById("image");
+            var description = document.getElementById("description");
+            var link = document.getElementById("link");
+            var container = document.querySelector(".container");
+
+            switch(num) {
+      case 1:
+        image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=56780&P=335803428&PX=400.jpg";
+        description.textContent = "Place Food Inside Container and Straw Into Middle For Easy. Access to Beverage and Food. Fits On 16-40 Oz Souvenir Cups, Cans And Bottles. Can Hold Larger Food Options. Manufactured Using Recyclable PE Material. Stackable. Reusable.";
+        link.href = "https://www.promoplace.com/commercialprintingservices/p/KXQCF-HVTDW/30-oz.-oval-grub-tub"; // Set the link URL for Item 1
+        break;
+      case 2:
+        image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=65718&P=796862155&PX=400.jpg";
+        description.textContent = "Create delicious and portable feasts for any occasion. Whether you're headed to a neighborhood park, an elegant music festival, or the top of a mountain, DeeDee Stovel shows you how to create a tasty outdoor dining experience. With 125 recipes that include dishes like cucumber soup, lobster rolls, fried chicken, and apple cake, you'll be amazed at the variety of foods that are well-suited for outdoor eating. Call up your friends, grab a blanket, and fill up your picnic basket!";
+        link.href = "https://www.promoplace.com/commercialprintingservices/p/LBYFC-EZJGT/picnic-125-recipes-with-29-seasonal-menus"; // Set the link URL for Item 2
+        break;
+      case 3:
+        image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=52682&P=746876664&PX=400.jpg";
+        description.textContent = "Sea Picnic Blankets is your ideal travel accessories, hiking gear and beach accessories. This lightweight pocket blanket, waterproof beach blanket folds up to fit right into your palm. You can hook it onto your backpack, throw it in your bag or keep it in your car. Laser engraving, or debossed, full color imprint available with additional charge";
+        link.href = "https://www.promoplace.com/commercialprintingservices/p/HLKVH-DPGCS/sea-picnic-blankets"; // Set the link URL for Item 3
+        break;
+      case 4:
+        image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=52682&P=976878256&PX=400";
+        description.textContent = "Moly Picnic Blankets is made of durable polyester cloth. Just shake the blanket to easily remov e all the sand. The beach a nti-sand blanket can accommodate 4-6 people, which is enough for a family. It can be folded into a small size and packed in a small bag, and it is light to carry. Great for beaches, picnics, parks, family trips, sports events, open-air festivals, camping, hiking, fishing, other occasions and outdoor activies. Laser engraving, or debossed, full color imprint available";
+        link.href = "https://www.promoplace.com/commercialprintingservices/p/FSRGD-EGCHU/moly-picnic-blankets"; // Set the link URL for Item 6
+        break;
+      case 5:
+        image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=52252&P=576529874&PX=400";
+        description.textContent = "This sandproof beach blanket performs effectively at picnics, camping, hiking, concerts, football games, includes 1 x Sand Proof Beach Mat, 4 xDurable ABS Anchors Stakes, 1x Carabiner, 1 x Carry Bag. The beach mat can easily accommodate up to 4-6 people. Perfect for enjoying beach time with a group of friends or family.";
+        link.href = "https://www.promoplace.com/commercialprintingservices/p/ELXFJ-CFTGS/quick-drying-beach-mat-made-by-premium-nylon-with-small-pocket"; // Set the link URL for Item 4
+        break;
+      case 6:
+        image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=60462&P=156177398&PX=400";
+        description.textContent = "Travel in comfort with this soft-touch fleece blanket that folds neatly into a zippered pouch. This travel blanket pouch also has a convenient loop handle for carrying. Complies with Prop 65";
+        link.href = "https://www.promoplace.com/commercialprintingservices/p/GLGJE-AWNPW/wanderer-travel-blanket"; // Set the link URL for Item 5
+        break;
+      case 7:
+        image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=66308&P=976872711&PX=400";
+        description.textContent = "Oval Line Lunch Cooler with colorful accent. Nesting Locking Lid Bowl Set with vented lids. Fork, Knife, Spoon cutlery set. Complies with Prop 65";
+        link.href = "https://www.promoplace.com/commercialprintingservices/p/LNTJI-ICBHP/nested-oval-cutlery-lunch-set"; // Set the link URL for Item 6
+        break;
+      case 8:
+        image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=66308&P=776872718&PX=400";
+        description.textContent = "Insulated Cooler Bag with handle and front pocket. Noodle Bowl soup container with locking lid. Reusable Sandwich Bag with zip closure. Fork, Knife, Spoon cutlery set. Imprint on additional items available, see Terms & Conditions. Complies with Prop 65.";
+        link.href = "https://example.com/item4"; // Set the link URL for Item 4
+        break;
+      case 9:
+        image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=66308&P=547311260&PX=400";
+        description.textContent = "Ridge Up Front Lunch Cooler with front opening. Square Portion Control Containers for healthy portions. Fork, knife and spoon cutlery set. Imprint on additional items available, see Terms & Conditions. This item qualifies for dim weight. Please call or email for a freight quote";
+        link.href = "https://www.promoplace.com/commercialprintingservices/p/MJCRD-DSVYO/up-front-portion--cutlery-set"; // Set the link URL for Item 5
+        break;
+      case 10:
+        image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=64566&P=354997316&PX=400";
+        description.textContent = "This disposable plastic cutlery set is perfect for picnics or eating on the go. Includes fork, knife & spoon. A protective cover holds the set together. Hand wash recommended";
+        link.href = "https://www.promoplace.com/commercialprintingservices/p/GPTWE-IXWGU/cutlery-set"; // Set the link URL for Item 6
+        break;
+      case 11:
+        image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=51059&P=936932027&PX=400";
+        description.textContent = "Cutlery sets made from food-grade wheat straw replace plastic waste. Lightweight and easy to carry and store, it is a must-have accessory for travel, camping, picnics, parties, schools, offices or everyday meals, or as a special gift. Contains a pair of chopsticks, a knife, a spoon and a fork.";
+        link.href = "https://www.promoplace.com/commercialprintingservices/p/LBYNB-HKSLV/wheat-straw-tableware-portable-set"; // Set the link URL for Item 4
+        break;
+      case 12:
+      image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=63952&P=906287334&PX=400";
+        description.textContent = "Eco-friendly branding at its best. This retail chic wheat straw cutlery set is BPA Free, and suitable for hot food and liquids. Choose from a variety of colors to compliment your logo. Comes in a handy wheat straw box, so you'll never misplace your set and creates the perfect gift. Great promo for workspaces, Earth Month campaigns, and celebrations. Complies with Prop 65";
+        link.href = "https://www.promoplace.com/commercialprintingservices/p/GQWRE-GYXPS/wheat-straw-cutlery-set"; // Set the link URL for Item 4
+        break;
+      case 13:
+        image.src = "https://www.promoplace.com/ws/ws.dll/QPic?SN=50219&P=743255035&PX=400";
+        description.textContent = "Watch your business and brand take to the skies when you make a colorful gift of the Incredible Expanding flying disc toy! These round plastic disc features a rainbow of swirled colors and a hole in the center. Just give it a toss and watch it transform into a ring-shaped flier that's easy to catch and throw. It's like two toys in one. Add your school, sports team, organizational or company logo to the white colored pattern to customize a high-flying presentation for trade shows. Complies with CPSIA, Prop 65";
+        link.href = "https://www.promoplace.com/commercialprintingservices/p/IKMXB-GNZMT/incredible-expanding-flying-disc"; // Set the link URL for Item 6
+        break;
+                // Add cases for other items
+            }
+
+            // Add class to trigger transition effect
+            container.classList.add("turn-page");
+
+            // Remove class after transition is complete
+            setTimeout(function () {
+                container.classList.remove("turn-page");
+            }, 500); // Adjust timing to match transition duration
+        }
+    </script>
+</body>
+</html>
